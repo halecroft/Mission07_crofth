@@ -1,0 +1,22 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body>
+    <div>
+        <nav class="nav navbar">
+            <a asp-controller="Home" asp-action="Index">Home</a>
+            <a asp-controller="Home" asp-action="MovieForm">Movie Entry</a>
+            <a asp-controller="Home" asp-action="MovieList">Movie List</a>
+            <a asp-controller="Home" asp-action="Podcasts">My Podcasts</a>
+        </nav>
+
+        @RenderBody()
+    </div>
+</body>
+</html>
